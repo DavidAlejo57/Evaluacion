@@ -1,0 +1,91 @@
+/*-------- 14. Brand logo style ---------*/
+
+.brand-logo-active , .brand-logo-active-2 {
+    .single-brand-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: opacity(0.8);
+        cursor: pointer;
+        &.bl-grayscale {
+            img {
+                filter: grayscale(100%);
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+        &:hover {
+          filter: opacity(1);  
+        }
+    } 
+}
+
+.brand-logo-active , .brand-logo-active-2 , .testimonial-active , .testimonial-active-2 {
+    &.owl-carousel {
+        .owl-item {
+            img {
+                display: inline-block;
+                width: auto;
+                border-radius: 0;
+            }
+        }
+    }
+}
+.brand-logo-active , .brand-logo-active-2 {
+    &.owl-carousel {
+        .owl-item {
+            img {
+                display: inline-block;
+                width: auto;
+                transition: all .3s ease 0s;
+                &:hover {
+                    filter: brightness(0.25);
+                }
+            }
+        }
+    }
+}
+
+.brand-logo {
+    padding: 50px 0 50px;
+    @media #{$xs-layout} {
+        padding: 40px 0 30px;
+    }
+}
+
+.brand-logo-ptb-about {
+    padding: 60px 0 60px;
+    @media #{$xs-layout} {
+        padding: 40px 0 40px;
+    }
+}
+
+.kids-brand-logo-ptb {
+    padding: 108px 0;
+    @media #{$md-layout} {
+        padding: 100px 0;
+    }
+    @media #{$xs-layout} {
+        padding: 50px 0;
+    }
+}
+
+@media #{$xs-layout} {
+    .brand-logo-area {
+        &.pt-70 {
+            padding-top: 50px;
+        }
+        &.pb-70 {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+/*------Testimonial----*/
+.testimonial-area{
+    @media #{$xs-layout} {
+        padding-bottom: 30px;
+    }
+    .single-testimonial{
+        .item-box{
+            .column-item{
+                padding: 40px;
+                background: $white;
+                border-radius: 15px;
+                .testimonial-quote{
+                    i{
+                        color: $body-background;
+                        background-color: $theme-color-main;
+                        display: inline-block;
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 100%;
+                        text-align: center;
+                        line-height: 25px;
+                        font-size: 10px;
+                        position: absolute;                    
+                    }
+                }
+                .client-img{
+                    margin-bottom: 25px;
+                    img{
+                        border-radius: 50%;
+                    }
+                    span{
+                        padding-left: 15px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        @media #{$md-layout} {
+                            padding-left: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

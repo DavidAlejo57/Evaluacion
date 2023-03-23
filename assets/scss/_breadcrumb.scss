@@ -1,0 +1,84 @@
+
+/*-------- 20. Breadcrumb style ---------*/
+
+
+.breadcrumb-ptb-1 {
+    background-image: url(../images/about/breadcrumb1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    @media #{$xs-layout} {
+        padding: 15px 0;
+    }
+    @media #{$ms-layout} {
+       min-height: 100px;
+    }
+}
+
+.breadcrumb-ptb-2 {
+    padding: 0px 0 23px;
+}
+
+.breadcrumb-content {
+    position: relative;  
+    .breadcrumb-title {
+        h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            color: #343434;          
+            line-height: 1;
+            font-weight: 600;           
+            letter-spacing: 0.6px;
+            font-family: $font-title;  
+            text-align: center;
+            @media #{$md-layout} {
+                font-size: 40px;
+            }
+            @media #{$xs-layout} {
+                font-size: 30px;
+            }
+        }
+        .woocommerce-breadcrumb{
+            text-align: center;
+            line-height: 28px;
+            a{
+                color: #999999;
+                display: inline;
+            }
+            span{
+                position: relative;
+                display: inline-block;
+                padding: 0 4px 0 4px;
+            }
+        }
+    }
+    ul {
+        li {
+            display: inline-block;
+            margin: 0 2px;
+            text-transform: capitalize;
+            color: #737373;
+            span {
+                margin-right: 4px;
+                display: inline-block;
+                margin: 6px 4px 0 0;
+                line-height: 1;
+                position: relative;
+                top: 1px;
+            }
+            a {
+                text-transform: capitalize;
+                color: #181818;
+                &:hover {
+                    color: $theme-color-main;
+                }
+            }
+        }
+    }
+}
+
